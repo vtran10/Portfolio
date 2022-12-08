@@ -1,3 +1,6 @@
+#this enables exchange to see users in all domains
+Set-ADServerSettings -ViewEntireForest $true
+
 #get count of all users
 (get-user -OrganizationalUnit "ou=Departments - dc,DC=amaweb,dc=local").count #20
 (get-user -OrganizationalUnit "ou=Departments - hq,DC=amaweb,dc=local").count #90

@@ -1,0 +1,42 @@
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\bin\Debug\net6.0\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\bin\Debug\net6.0\webclasslib.runtimeconfig.json
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\SandBox\project\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.runtimeconfig.json
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
+D:\NAIT\2. Semester 5 Fall 2022\CPSC1517 OE02\cpsc1517-sep-2022-assessments-vtran10\project-begin\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.runtimeconfig.json
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.dll
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.dll
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
+D:\NAIT\PROJECTS\Portfolio\project-begin\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
