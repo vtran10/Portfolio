@@ -1,0 +1,211 @@
+@page
+@model MyApp.Namespace.QueryCrudModel
+@{
+    ViewData["Title"] = "QueryCrud";
+}
+
+<form method="post">
+<div class="row text-center">
+<div class="col-6 justify-content-center">
+	<h5>RailCar Query</h5>
+	<div class="row mb-3 justify-content-center">
+		<div class="col-3">
+			<label for="PartialReportingMark" class="col-form-label">ReportingMark</label>
+		</div>
+		<div class="col-4">
+			<input type="search" class="form-control" 
+				placeholder="PartialReportingMark" 
+				id="PartialReportingMark" 
+				name="PartialReportingMark" value="@Model.PartialReportingMark">
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark" 
+				name="ButtonPressed" value="SearchByPartialReportingMark">
+				Search
+			</button>
+		</div>
+	</div>
+	<div class="row mb-3 justify-content-center">
+		<div class="col-3">
+			<label for="SelectedRailCarTypeID" class="col-form-label">RailCarType</label>
+		</div>
+		<div class="col-4">
+			<select class="form-select" id="SelectedRailCarTypeID" name="SelectedRailCarTypeID">
+				<option value="0">select ...</option>
+				@foreach (var item in Model.SelectListOfRailCarType)
+				{
+					<option value="@item.ValueField" 
+						selected=@(Model.SelectedRailCarTypeID == item.ValueField)>
+						@item.DisplayField
+					</option>
+				}
+			</select>
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark" 
+				name="ButtonPressed" value="SearchByRailCarType">
+				Search
+			</button>
+		</div>
+		<input type="hidden" name="FilterType" value="@Model.FilterType">
+	</div>
+	@if(Model.SearchedRollingStock != null)
+	{
+		<div id="table_box_bootstrap">
+		<table class="table table-hover">
+		<thead>
+		<tr>
+			<th>Action</th>
+			<th>ReportingMark</th>
+			<th>Owner</th>
+			<th>Capacity</th>
+			<th>InService</th>
+		</tr>
+		</thead>
+		<tbody>
+		@if(Model.SearchedRollingStock.Count == 0)
+		{
+		<tr><td colspan="6"><i>There are no RailCars available.</i></td></tr>
+		}
+		@foreach(var item in Model.SearchedRollingStock)
+		{
+		<tr>
+			<td>
+				<button type="submit" class="btn btn-dark" 
+				name="RollingStock.ReportingMark" value="@item.ReportingMark">
+				Edit
+				</button>
+			</td>
+			<td>@item.ReportingMark</td>
+			<td>@item.Owner</td>
+			<td>@item.Capacity</td>			
+			<td>
+				<input type="checkbox" disabled checked="@item.InService">
+			</td>
+		</tr>
+		}
+		</tbody>
+		</table>
+		</div>
+	}
+	</div>
+<div class="col-1"></div>
+<div class="col-5">
+	<h5>RailCar Crud</h5>
+	<div class="row mb-3">		
+		<div class="col">
+			<label for="ReportingMark" class="col-form-label">ReportingMark</label>
+			<input type="text" class="form-control" id="ReportingMark" 
+				@* readonly id=@(Model.RollingStock.ReportingMark != null) *@
+				@* disabled=@(Model.RollingStock.ReportingMark != null) *@
+				@* disabled=@(Model.RollingStock.ReportingMark is null) *@
+				name="RollingStock.ReportingMark" value="@Model.RollingStock.ReportingMark" />
+		</div>		
+		<div class="col">
+			<label for="Owner" class="col-form-label">Owner</label>
+			<input type="text" class="form-control" id="Owner" 
+				@* readonly id=@(Model.RollingStock.Owner == null)				 *@
+				name="RollingStock.Owner" value="@Model.RollingStock.Owner" />
+		</div>		
+	</div>
+	<div class="row mb-3">		
+		<div class="col">
+			<label for="LightWeight" class="col-form-label">LightWeight</label>
+			<input type="number" class="form-control" id="LightWeight" 
+				name="RollingStock.LightWeight" value="@Model.RollingStock.LightWeight"/>
+		</div>
+		<div class="col">
+			<label for="LoadLimit" class="col-form-label">LoadLimit</label>
+			<input type="number" class="form-control" id="LoadLimit" 
+				name="RollingStock.LoadLimit" value="@Model.RollingStock.LoadLimit"/>
+		</div>
+		<div class="col">
+			<label for="Capacity" class="col-form-label">Capacity</label>
+			<input type="number" class="form-control" id="Capacity" 
+				name="RollingStock.Capacity" value="@Model.RollingStock.Capacity"/>
+		</div>
+	</div>
+	<div class="row mb-3">		
+		<div class="col">
+			<label for="RailCarType" class="col-form-label">RailCarType</label>
+			<select class="form-select" id="RailCarTypeID" name="RollingStock.RailCarTypeID">
+				<option value="0">select ...</option>
+				@foreach (var item in Model.SelectListOfRailCarType)
+				{
+					<option value="@item.ValueField" 
+					selected=@(Model.RollingStock.RailCarTypeID == item.ValueField)>
+					@item.DisplayField
+					</option>
+				}
+			</select>
+		</div>
+		<div class="col">
+			<label for="YearBuilt" class="col-form-label">YearBuilt</label>
+			<input type="number" class="form-control" id="YearBuilt" 
+				name="RollingStock.YearBuilt" value="@Model.RollingStock.YearBuilt"/>
+		</div>			
+	</div>
+	<div class="row mb-3">
+		<div class="col">
+			<label for="InService" class="form-check-label">InService</label>
+			<input type="checkbox" class="form-check-input" id="InService" 
+				name="InService" 
+				value="@Model.InService"
+				checked="@Model.RollingStock.InService"/>
+		</div>
+	</div>
+	<div class="row mb-3">		
+		<div class="col">
+			<label for="Notes" class="col-form-label">Notes</label>
+			<textarea class="form-control" rows="5" cols="60" placeholder="enter your notes" name="RollingStock.Notes" value="@Model.RollingStock.Notes"></textarea>
+		</div>
+	</div>	
+	<div class="row mb-3 justify-content-center">
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark"
+				disabled=@(Model.RollingStock.ReportingMark is not null) 
+				name="ButtonPressed" value="Add">&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark" 
+			disabled=@(Model.RollingStock.ReportingMark is null)
+			name="ButtonPressed" value="Update">Update</button>
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark" 
+			disabled=@(Model.RollingStock.ReportingMark is null)
+			name="ButtonPressed" value="Delete">Delete</button>
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-dark" 
+			name="ButtonPressed" value="Clear">Clear</button>
+		</div>
+	</div>
+	
+	@if(!string.IsNullOrEmpty(Model.ErrorMessage))
+	{
+		<p class="error-message">@Model.ErrorMessage</p>
+	}
+
+	@if(!string.IsNullOrEmpty(Model.SuccessMessage))
+	{
+		<p class="success-message">@Model.SuccessMessage</p>
+	}
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="~/js/paginator.js"></script>
+
+<script type="text/javascript">
+window.addEventListener("load", function () {
+    let box = paginator({
+        table: document.getElementById("table_box_bootstrap").getElementsByTagName("table")[0],
+        box_mode: "list",
+    });
+    box.className = "box";
+    let mytarget = document.getElementById("table_box_bootstrap");
+    mytarget.appendChild(box);
+    mytarget.style.display = 'block';
+}, false);
+</script>
