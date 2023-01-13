@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj": {}
+    "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj": {}
   },
   "projects": {
-    "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj": {
+    "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj",
+        "projectUniqueName": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj",
         "projectName": "trainapp",
-        "projectPath": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj",
-        "packagesPath": "C:\\Users\\Bikuta\\.nuget\\packages\\",
-        "outputPath": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\trainapp\\obj\\",
+        "projectPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\trainapp\\trainapp.csproj",
+        "packagesPath": "C:\\Users\\KYS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\trainapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bikuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\KYS\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj": {
-                "projectPath": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj"
+              "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj": {
+                "projectPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj"
               }
             }
           }
@@ -68,28 +66,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj": {
+    "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj",
+        "projectUniqueName": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj",
         "projectName": "webclasslib",
-        "projectPath": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj",
-        "packagesPath": "C:\\Users\\Bikuta\\.nuget\\packages\\",
-        "outputPath": "D:\\NAIT\\PROJECTS\\Portfolio\\TrainApp\\src\\webclasslib\\obj\\",
+        "projectPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\webclasslib.csproj",
+        "packagesPath": "C:\\Users\\KYS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\TrainApp\\src\\webclasslib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bikuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\KYS\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -129,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
