@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webclasslib
+<<<<<<< HEAD
+build_property.ProjectDir = c:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\
+=======
 build_property.ProjectDir = d:\NAIT\PROJECTS\Portfolio\TrainApp\src\webclasslib\
+>>>>>>> bcb3ac5a04aed6733b06e543e5f52c7a0f0c5c5f

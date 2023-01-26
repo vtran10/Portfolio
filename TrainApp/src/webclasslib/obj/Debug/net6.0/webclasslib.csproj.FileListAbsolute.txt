@@ -46,3 +46,15 @@ D:\NAIT\PROJECTS\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib
 D:\NAIT\PROJECTS\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
 D:\NAIT\PROJECTS\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
 D:\NAIT\PROJECTS\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\bin\Debug\net6.0\webclasslib.dll
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.dll
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+C:\Users\KYS\Documents\GitHub\Portfolio\TrainApp\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
