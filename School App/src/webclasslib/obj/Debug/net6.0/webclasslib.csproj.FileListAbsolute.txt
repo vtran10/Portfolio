@@ -40,3 +40,17 @@ C:\Users\KYS\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net
 C:\Users\KYS\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
 C:\Users\KYS\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
 C:\Users\KYS\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.runtimeconfig.json
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.dll
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.dll
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
+D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll

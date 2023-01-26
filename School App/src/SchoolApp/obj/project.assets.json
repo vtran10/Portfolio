@@ -1924,32 +1924,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KYS\\.nuget\\packages\\": {}
+    "C:\\Users\\Bikuta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
+      "projectUniqueName": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
       "projectName": "SchoolApp",
-      "projectPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
-      "packagesPath": "C:\\Users\\KYS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\obj\\",
+      "projectPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
+      "packagesPath": "C:\\Users\\Bikuta\\.nuget\\packages\\",
+      "outputPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KYS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bikuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
-              "projectPath": "C:\\Users\\KYS\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj"
+            "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
+              "projectPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj"
             }
           }
         }
@@ -1982,7 +1984,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
