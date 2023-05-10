@@ -1924,34 +1924,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bikuta\\.nuget\\packages\\": {}
+    "C:\\Users\\victo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
       "projectName": "SchoolApp",
-      "projectPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
-      "packagesPath": "C:\\Users\\Bikuta\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\SchoolApp\\obj\\",
+      "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\SchoolApp.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\SchoolApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bikuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
-              "projectPath": "D:\\Personal\\PROJECTS\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj"
+            "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj"
             }
           }
         }
@@ -1976,6 +1974,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1984,7 +2000,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

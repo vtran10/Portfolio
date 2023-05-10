@@ -54,3 +54,17 @@ D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\refin
 D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
 D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
 D:\Personal\PROJECTS\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.runtimeconfig.json
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.dll
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.dll
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\refint\webclasslib.dll
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.pdb
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\webclasslib.genruntimeconfig.cache
+C:\Users\victo\Documents\GitHub\Portfolio\School App\src\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
