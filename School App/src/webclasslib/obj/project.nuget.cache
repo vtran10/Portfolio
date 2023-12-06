@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rboBNEaiv20m6zcsD3RDXlLM5P68xHkrio+MYYvAt9wcYgVSqw1YkdQqx3Y7uqlRmO3rvXgbk74NzE6D7EOd/g==",
+  "dgSpecHash": "C7GGev+mtuR+frRDyw6JKJzs/HMVnPlpr5GC4wFEMYALk5OsnwRQhnf58sy+rmEaK3UV+fLuky+mpkgkihNgzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -45,10 +45,7 @@
     "C:\\Users\\victo\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\victo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\victo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\victo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\victo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+    "C:\\Users\\victo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
