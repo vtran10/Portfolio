@@ -1,2 +1,2 @@
 # Portfolio
-sync check
+sync check 2
