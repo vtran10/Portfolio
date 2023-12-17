@@ -52,22 +52,28 @@ def print_pokemon(num):
     weight = data["weight"]
     sprite_url = data["sprites"]["other"]["official-artwork"]["front_default"]
 
-    display_string = f"id : {id} \nname : {name} \nweight : {weight} \nheight : {height} \nsprite_url : {sprite_url}"
+    display_string = f"id: {id} \nname: {name} \nweight: {weight} \nheight: {height} \nsprite_url: {sprite_url}"
 
     print (display_string)
 
     for i in range (len(data["types"])):
         pokemon_types = data["types"][i]["type"]["name"]
-        print("type", i, ": " + pokemon_types)
+        print(f"type {i}:", pokemon_types)
 
     for i in range (len(data["stats"])):
         stat_name = data["stats"][i]["stat"]["name"]
         pokemon_stats = data["stats"][i]["base_stat"]
-        print(stat_name, ": ", pokemon_stats)
+        print(f"{stat_name}:", pokemon_stats)
         i=+1
 
+    for i in range (len(data["moves"])):
+        move_name = data["moves"][i]["move"]["name"]
+        print(f"move {i}:", move_name)
+        if i >= 5:
+            break
+
 #test function
-# print_pokemon(9)
+print_pokemon(0)
 
 # # set pokemon id number
 # pokemon_id = 7

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
+    <title>Pokemon App</title>
+  </head>
+  <body class="bg-black">
+    <nav class="flex justify-between gap-4 py-4 px-6 text-xl">
+      <ul class="flex">
+        <li class="text-white"><a href="#">Pokemon App</a></li>
+      </ul>
+      <ul class="flex gap-4">
+        <li class="text-white"><a href="#">Home</a></li>
+        <li class="text-white"><a href="#">Code</a></li>
+        <li class="text-white"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container mx-auto">
+      <div class="h-screen">
+        <div class="text-white text-2xl text-center mt-4 mb-4 rounded-xl">
+          <button
+            class="bg-red-700 rounded-xl p-2 cursor-pointer hover:scale-110 onclick:scale-95"
+            onclick="fetchData()"
+          >
+            get random pokemon
+          </button>
+        </div>
+
+        <!-- pokemon card container-->
+        <div
+          class="bg-yellow-400 w-96 py-2 place-items-center justify-center mx-auto rounded-xl"
+        >
+          <!-- green border -->
+          <div
+            class="bg-gradient-to-r from-emerald-400 to-teal-600 w-[23rem] place-items-center justify-center mx-auto rounded-xl"
+          >
+            <div class="flex">
+              <!-- basic -->
+              <div
+                class="bg-gray-300 w-1/5 rounded-xl flex justify-center place-items-center"
+              >
+                <p class="px-2 text-center text-black font-mono">
+                  <i>BASIC</i>
+                </p>
+              </div>
+              <div id="pName" class="px-2 text-2xl font-mono">bulbasaur</div>
+            </div>
+
+            <!-- pokemon iamge -->
+            <div class="p-2 rounded-xl">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                id="imageUrl"
+                class="p-2 rounded-xl my-[-1rem] object-contain"
+              />
+            </div>
+            <h2 class="text-center text-2xl font-mono">Stats</h2>
+
+            <!-- pokemon statsLeft column -->
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                id="statsLeft"
+                class="p-2 place-items-center justify-center mx-auto italic"
+              >
+                <p>HP: 11</p>
+                <p>Defense: 11</p>
+                <p>Attack: 11</p>
+                <p>Special-Defense: 11</p>
+                <p>Special-Attack: 11</p>
+              </div>
+
+              <!-- pokemon statsRight column -->
+              <div>
+                <div
+                  id="statsRight"
+                  class="p-2 place-items-center justify-center mx-auto italic"
+                >
+                  <div id="height">
+                    <p>Height: 11 m</p>
+                  </div>
+                  <div id="weight">
+                    <p>Weight: 11 kg</p>
+                  </div>
+                </div>
+                <div
+                  id="types"
+                  class="p-2 place-items-center justify-center mx-auto italic"
+                >
+                  <p>Grass, Poison</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Function to generate a random integer in a specific range
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      // Example usage: generate a random number between 1 and 10
+      const randomNumber = getRandomInt(1, 152);
+
+      // function to load pokemon card data
+      async function fetchData() {
+        // get random number
+        
+        i = getRandomInt(1, 152);
+        console.log("generated random number: i = " + i);
+
+        fetch(`pokemon_data/pokemon_${i}_data.json`)
+          .then((response) => response.json())
+          .then((data) => {
+            pokemon = data;
+
+            // pokemon name
+            name = data.name;
+            document.getElementById("pName").innerHTML = name;
+
+            // pokemon image
+            imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${i}.png`;
+            document.getElementById("imageUrl").src = imageUrl;
+            document.getElementById("imageUrl").style.width = "400px";
+
+            // pokemon statsLeft column
+            statsLeft = data.stats;
+            const statsLeftContainer = document.getElementById("statsLeft");
+            statsLeftContainer.innerHTML = ""; // Clear existing content
+            statsLeft.forEach((stat) => {
+              const statElement = document.createElement("p");
+              statElement.innerHTML = `${stat.stat.name}: ${stat.base_stat}`;
+              statsLeftContainer.appendChild(statElement);
+            });
+
+            // pokemon statsRight column, divide by value by 10 
+            // as unit of measures are height = decimeter and weight = hectogram
+            statsRight = [
+              { key: "height", value: `${data.height / 10} m` },
+              { key: "weight", value: `${data.weight / 10} kg` },
+            ];
+            const statsRightContainer = document.getElementById("statsRight");
+            statsRightContainer.innerHTML = ""; // Clear existing content
+            statsRight.forEach((stat) => {
+              const statElement = document.createElement("p");
+              statElement.innerHTML = `${stat.key}: ${stat.value}`;
+              statsRightContainer.appendChild(statElement);
+            });
+
+            // pokemon types
+            types = data.types;
+            const typesContainer = document.getElementById("types");
+            typesContainer.innerHTML = ""; // Clear existing content
+            types.forEach((type) => {
+              const typeElement = document.createElement("p");
+              typeElement.innerHTML = `type: ${type.type.name}`;
+              typesContainer.appendChild(typeElement);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
