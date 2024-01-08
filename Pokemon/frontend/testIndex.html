@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <!-- Include necessary scripts -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Your other scripts here -->
+
+    <title>Pokemon Page</title>
+  </head>
+  <body x-data="pokemonData()">
+    <h1 x-text="`Pokemon ID: ${pokemonId}`"></h1>
+    <h1 x-text="`Pokemon Name: ${name}`"></h1>
+
+    <!-- Button to refresh with a random Pokemon ID -->
+    <button x-on:click="refreshPage0()">Get Random Pokemon</button>
+
+    <!-- ... (previous code) ... -->
+
+    <script>
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function pokemonData() {
+        return {
+          pokemonId: 1,
+          name: "", // Add a property to store the Pokemon name
+
+          async initPokemonData(pokemonId) {
+            try {
+              // Fetch data for pokemonData
+              let response = await axios.get(
+                `/pokemon_data/pokemon_${pokemonId}_data.json`
+              );
+              let data = response.data;
+              this.name = data.name; // Update the name property in Alpine.js state
+
+              // Set the fetched data in Alpine.js state
+              console.log("Pokemon ID:", pokemonId);
+              console.log("Pokemon Data:", data);
+              console.log("Pokemon Name:", this.name); // Access the name property from the state
+            } catch (error) {
+              console.error(`Error: ${error.message}`);
+            }
+          },
+
+          refreshPage0() {
+            let newPokemonId = getRandomNumber(1, 152);
+            this.initPokemonData(newPokemonId);
+            this.pokemonId = newPokemonId; // Update the displayed Pokemon ID
+            console.log("refreshPage()");
+          },
+        };
+      }
+
+      window.onload = function () {
+        // Initialize with Pokemon ID 1
+        pokemonData().initPokemonData(1);
+        console.log("window.onload");
+      };
+    </script>
+  </body>
+</html>

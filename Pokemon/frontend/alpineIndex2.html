@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include necessary scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/frontend/alpineFunctions/initPokemonData2.js"></script>
+    <script src="/frontend/alpineFunctions/getRandomNumber.js"></script>
+    <script src="/frontend/alpineFunctions/capFirstLetter.js"></script>
+    <style>
+      :root {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- x-data -->
+    <div class="container mx-auto" x-data="pokemonData()">
+      <!-- nav buttons -->
+      <div>
+        <div class="flex justify-around">
+          <button
+            class="bg-blue-700 text-3xl p-2 rounded mt-10 cursor-pointer hover:scale-110"
+            x-on:click="refreshPage()"
+          >
+            Click Me
+          </button>
+        </div>
+        <h1
+          x-text="capFirstLetter(pokemon.name)"
+          class="text-center text-5xl font-semibold mt-2"
+        >
+          Pokemon Name
+        </h1>
+        <!-- buttons div -->
+        <div class="flex justify-between my-2">
+          <!-- previous pokemon -->
+          <button
+            x-show="previousPokemonName !== null"
+            x-on:click="getPreviousPokemon()"
+            class="bg-blue-700 text-sm font-semibold rounded-xl px-2 cursor-pointer hover:scale-110"
+          >
+            &larr;
+            <span>#</span>
+            <span x-text="String(previousPokemonId).padStart(4, '0')"></span>
+            <span x-text="previousPokemonName">previous pokemon</span>
+          </button>
+          <!-- next pokemon -->
+          <button
+            x-on:click="getNextPokemon()"
+            class="bg-blue-700 text-sm font-semibold rounded-xl p-2 cursor-pointer hover:scale-110"
+          >
+            <span>#</span>
+            <span x-text="String(nextPokemonId).padStart(4, '0')"></span>
+            <span x-text="nextPokemonName">next pokemon</span>
+            &rarr;
+          </button>
+        </div>
+        <!-- button div ends -->
+      </div>
+      <!-- nav buttons ends -->
+
+      <!-- navbar -->
+      <div
+        class="bg-blue-700 my-4 py-3 rounded text-xs font-semibold"
+      >
+        <ul class="flex justify-center gap-4">
+          <li class="hover:text-blue-300 scale-110"><a href="#">Content</a></li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110"><a href="#">Info</a></li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Base stats</a>
+          </li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Evolution chart</a>
+          </li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Pokedex entries</a>
+          </li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Moves learned</a>
+          </li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110"><a href="#">Sprites</a></li>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Locations</a>
+          </li>
+          <span>|</span>
+          <li class="hover:text-blue-300 scale-110">
+            <a href="#">Languages</a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar ends -->
+
+      <!-- content -->
+      <template
+        x-for="(entry, index) in pokemonS.flavor_text_entries.slice(0, 3)"
+        :key="index"
+      >
+        <!-- Your template code for each entry goes here -->
+        <div class="">
+          <p class="mt-2" x-text="entry.flavor_text"></p>
+        </div>
+      </template>
+      <!-- content ends -->
+
+      <!-- info contains pokedex data, training and breeding-->
+      <div class="flex">
+        <div class="text-center w-1/3" x-show="imageUrl !== null">
+          <img
+            class=""
+            x-bind:src="imageUrl"
+            alt="pokemon image"
+            width="300px"
+            height="300px"
+          />
+          <a
+            class="text-center text-blue-400 my-4 py-3 rounded text-xs font-semibold hover:text-blue-200"
+            href="#"
+            >Additional artwork</a
+          >
+        </div>
+
+        <div class="flex gap-10">
+          <div class="w-50">
+            <h2 class="text-xl">Pokedex data</h2>
+            <p>National No <span x-text="pokemon.id"></span></p>
+            <p>type</p>
+            <p>species</p>
+            <p>height</p>
+            <p>weight</p>
+            <p>abilities</p>
+            <p>local no</p>
+          </div>
+
+          <div class="w-50">
+            <div>
+              <h2 class="text-xl">Training</h2>
+              <p>training content</p>
+            </div>
+            <div class="mt-2">
+              <h2 class="text-xl">Breeding</h2>
+              <p>breeding content</p>
+              <p>Egg Groups</p>
+              <p>Gender</p>
+              <p>Egg Cycles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info ends -->
+
+      <!-- pokemon stats -->
+      <p x-show="pokemon === null">Loading...</p>
+      <template x-if="pokemon !== null">
+        <!-- template root div -->
+        <div class="mt-2">
+          <!-- Display Pokemon Data -->
+          <h2>Pokemon stats:</h2>
+          <!-- Display data from pokemonData -->
+          <p>
+            Pokemon id:
+            <span x-text="pokemon.id"></span>
+          </p>
+          <p>
+            Pokemon name:
+            <span x-text="pokemon.name"></span>
+          </p>
+          <p>
+            Pokemon weight:
+            <span x-text="(pokemon.weight / 10)"></span>&nbsp;kg
+          </p>
+          <p>
+            Pokemon height:
+            <span x-text="(pokemon.height / 10)"></span>&nbsp;m
+          </p>
+        </div>
+      </template>
+      <!-- pokemon stats Ends -->
+    </div>
+    <!-- x-data ends -->
+  </body>
+</html>

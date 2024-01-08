@@ -1929,11 +1929,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\schoolapp\\schoolapp.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\schoolapp\\schoolapp.csproj",
       "projectName": "schoolapp",
-      "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\schoolapp\\schoolapp.csproj",
+      "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\schoolapp\\schoolapp.csproj",
       "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\schoolapp\\obj\\",
+      "outputPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\schoolapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1950,8 +1950,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj": {
-              "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj"
+            "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj"
             }
           }
         }

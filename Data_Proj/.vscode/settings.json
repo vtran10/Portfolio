@@ -1,0 +1,11 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "Movies2",
+      "database": "D:\\RawData\\DatasStores\\movies2.db"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <title>progress bar</title>
+  </head>
+  <style>
+    .progress {
+      width: 100%;
+      max-width: 300px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .progress-inner {
+      height: 100%;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #337ab7;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+      transition: width 0.6s ease;
+    }
+  </style>
+  <body>
+    <!-- <div x-data="{ progress: 0 }">
+      <progress max="100" x-bind:value="progress">
+        <span x-text="`${progress}%`"></span>
+      </progress>
+
+      <button x-on:click="progress = progress + 5">Increment</button>
+    </div> -->
+
+    <div
+      x-data="{ 
+    progress: 0, 
+    intervalId: null, // Variable to store the interval ID
+    increment() {
+      this.progress = Math.min(this.progress + 1, 100); // Ensure progress doesn't exceed 100
+      console.log(`this.progress: ${this.progress}`);
+    },     
+
+    init() {
+      this.intervalId = setInterval(() => {
+        if (this.progress >= 100) {
+          this.clearInterval(); // Clear interval when progress reaches 100
+        }
+        this.increment();
+      }, 100);
+    },
+
+    async clearInterval() {
+      clearInterval(this.intervalId);
+      this.progress = 0; // Reset progress to 0
+      console.log('Interval cleared and progress reset');
+      
+      // Wait for 10 seconds before restarting the interval and incrementing
+      await new Promise(resolve => setTimeout(resolve, 10000));
+      this.init();
+    },
+  }"
+      x-init="init"
+    >
+      <div class="progress">
+        <div class="progress-inner" x-bind:style="`width: ${progress}%`"></div>
+      </div>
+
+      <button x-on:click="increment">Increment</button>
+      <button x-on:click="clearInterval">Clear Interval</button>
+    </div>
+  </body>
+</html>

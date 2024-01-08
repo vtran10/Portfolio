@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj": {}
+    "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj": {
+    "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj",
         "projectName": "webclasslib",
-        "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj",
+        "projectPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",

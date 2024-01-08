@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C7GGev+mtuR+frRDyw6JKJzs/HMVnPlpr5GC4wFEMYALk5OsnwRQhnf58sy+rmEaK3UV+fLuky+mpkgkihNgzw==",
+  "dgSpecHash": "WkJlpUmh0oltCLjtqH+PiI+Vutw+fMpajgW5QjzK02leXZhEgsOV0sDDWZAzhtXMF1uNRIeC458hPQHSVoYKOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\webclasslib\\webclasslib.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\webclasslib\\webclasslib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

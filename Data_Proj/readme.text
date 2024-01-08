@@ -1,0 +1,9 @@
+sqlite3 can only see db files in its directory
+open cmd prompt change directory to location of db files, then start sqlite3
+
+sql.py output function will create a new db file if it does not already exist
+sqlite3 .open dbfile.db > .tables > select * from table_name;
+
+some csv files cant be accessed outside the project
+all datafiles.csv are located at D:\RawData 
+all databases.db are located at D:\RawData\DataStores

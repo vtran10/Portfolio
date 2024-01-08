@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ulIBL59G4S4lBdh+2snHyyncp/XnhfmhyWmgAV84ywRvcMVih1JouOLSZRba4loMpVSBPGcHAco2slHbBJ11DA==",
+  "dgSpecHash": "oc4aydPofKojS/k69MoJ5b60jwdRpIS8NSGt0GXQyez7NHOU+3ootOIkIREMaC+r0LbMxyUakj+4E+1Zftf9Zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Repo_NEW\\DotNetProjects\\School App\\src\\SchoolApp\\SchoolApp.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Documents\\GitHub\\Portfolio\\School App\\src\\schoolapp\\schoolapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include necessary scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- java scripts -->
+    <script src="/frontend/alpineFunctions/initPokemonData.js"></script>
+    <script src="/frontend/alpineFunctions/capFirstLetter.js"></script>
+    <script src="/frontend/alpineFunctions/getRandomNumber.js"></script>
+    
+    <script src="/frontend/alpineFunctions/getPreviousPokemon.js"></script>
+    <script src="/frontend/alpineFunctions/getNextPokemon.js"></script>    
+
+    
+    <style>
+      :root {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div
+        x-data="{ 
+        prevPokemon: null,
+        prevPokemonId: null,
+        prevPokemonName: null,
+
+        nextPokemon: null,  
+        nextPokemonId: null,
+        nextPokemonName: null,
+        
+        p: null,
+        name: null,
+        weight: null,
+        height: null,
+        id: null,
+
+        s: null,
+        evoFrom: null,
+        evoChain: null,
+        
+        c: null,
+        evo1: null,
+        evo2: null,
+      }"
+        x-init="initPokemonData"
+      >
+        <!-- pokemon data starts here -->
+        <p x-show="p === null">Loading...</p>
+        <template x-if="p !== null">
+          <!-- template root div -->
+          <div class="mt-2">
+            <!-- navbar -->
+            <div class="container mx-auto">
+              <h1
+                x-text="capFirstLetter(name)"
+                class="text-center text-5xl font-semibold mt-2"
+              >
+                Pokemon Name
+              </h1>
+              <!-- buttons div -->
+              <div class="flex justify-between my-2">
+                <!-- previous pokemon -->
+                <button
+                  class="bg-red-700 text-sm rounded-xl p-2 cursor-pointer hover:scale-110 onclick:scale-95"
+                >
+                  &larr;
+                  <span x-text="String(id).padStart(4, '0')"></span>
+                  <!-- <span x-text="prevPokemonId"></span> -->
+                  <span x-text="prevPokemonName">previous pokemon</span>
+                </button>
+                <!-- next pokemon -->
+                <button
+                  @click="getNextPokemon"
+                  class="bg-red-700 text-sm rounded-xl p-2 cursor-pointer hover:scale-110 onclick:scale-95"
+                >
+                  <span x-text="String(id).padStart(4, '0')"></span>
+                  <!-- <span x-text="id"></span> -->
+                  <span x-text="nextPokemonName">next pokemon</span>
+                  &rarr;
+                </button>
+              </div>
+
+              <!-- pokemon pData starts here -->
+              <p x-show="p === null">Loading...</p>
+              <template x-if="p !== null">
+                <!-- template root div -->
+                <div>
+                  <!-- Display Pokemon Data -->
+                  <h2>Pokemon Data:</h2>
+                  <!-- Display data from pokemonData -->
+                  <p>
+                    Pokemon name:
+                    <span x-text="name"></span>
+                  </p>
+                  <p>
+                    Pokemon weight:
+                    <span x-text="(weight / 10)"></span>&nbsp;kg
+                  </p>
+                  <p>
+                    Pokemon height:
+                    <span x-text="(height / 10)"></span>&nbsp;m
+                  </p>
+                </div>
+              </template>
+
+              <!-- pokemon sData starts here -->
+              <p x-show="s === null">Loading...</p>
+              <template x-if="s !== null">
+                <!-- template root div -->
+                <div class="mt-4">
+                  <!-- Display Pokemon SData -->
+                  <h2>Pokemon SData:</h2>
+                  <!-- Display data from pokemonSData -->
+                  <p x-show="evoFrom !== null">
+                    Evolves From:
+                    <span x-text="evoFrom"></span>
+                  </p>
+
+                  <p x-show="name !== null && name !== evo2">
+                    Evolves To:
+                    <span x-show="name == evo1" x-text="evo2"></span>
+                    <span
+                      x-show="name !== evo1 && name !== evo2 "
+                      x-text="evo1"
+                    ></span>
+                  </p>
+
+                  <p>
+                    Evolution chain:
+                    <span x-text="evoChain"></span>
+                  </p>
+                </div>
+              </template>
+
+              <!-- pokemon cData starts here -->
+              <template x-if="c !== null">
+                <!-- template root div -->
+                <div class="mt-4">
+                  <!-- Display Pokemon SData -->
+                  <h2>Pokemon CData:</h2>
+                  <!-- Display data from pokemonSData -->
+                  <p>
+                    Form 1:
+                    <span x-text="c.chain.species.name"></span>
+                  </p>
+
+                  <p>
+                    Form 2:
+                    <span x-text="c.chain.evolves_to[0].species.name"></span>
+                  </p>
+
+                  <p>
+                    Form 3:
+                    <span
+                      x-text="c.chain.evolves_to[0].evolves_to[0].species.name"
+                    ></span>
+                  </p>
+                  <!-- Add more data as needed -->
+                </div>
+              </template>
+              <template x-else>
+                <p x-show="c === null">Loading...</p>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </body>
+</html>
